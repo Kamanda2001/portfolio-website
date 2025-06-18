@@ -1,0 +1,171 @@
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fb;
+  color: #333;
+  text-align: center;
+}
+
+img {
+  border-radius: 100px;
+  border: 3px solid #555;
+  margin-bottom: 20px;
+}
+
+/* Navigation */
+nav {
+  background-color: #1a1a1a;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border-radius: 4px;
+}
+
+/* Sections */
+.section {
+  padding: 40px;
+  background: #fff;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 85%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* Section Titles */
+.section h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #34495e;
+  position: relative;
+}
+
+.section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #3498db;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Subheadings */
+.section h3 {
+  color: #1a5276;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Resume Section */
+#resume ul {
+  margin-left: 20px;
+  text-align: left;
+  max-width: 900px;
+}
+
+#resume li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* Project Cards */
+#projects .project {
+  background-color: #ffffff;
+  padding: 20px 25px;
+  margin: 20px auto;
+  border-left: 5px solid #2980b9;
+  border-radius: 8px;
+  max-width: 850px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  text-align: left;
+}
+
+#projects .project h3 {
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+#projects .project p {
+  line-height: 1.6;
+}
+
+/* Lab Challenges */
+#labs .lab {
+  background-color: #f8f9f9;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-left: 5px solid #5dade2;
+  border-radius: 5px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+#labs .lab h3 {
+  margin-top: 0;
+  color: #2e4053;
+}
+
+#labs .lab img {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #fffbe6;
+  padding: 30px;
+  margin: 15px auto;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+#contact a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}

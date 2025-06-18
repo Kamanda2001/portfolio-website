@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Collins Kamau | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#labs">Lab Challenges</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="section">
+  <img src="images/yourphoto.jpg" alt="Collins Kamau" width="150">
+  <h1>Collins Kamau Kamanda</h1>
+  <p>Telecommunication and Network Graduate Engineer | Focused on Performance, Security & Reliability</p>
+</section>
+
+<!-- Resume Section -->
+<section id="resume" class="section">
+  <h2>Resume</h2>
+
+  <h3>Academic Background</h3>
+  <ul>
+    <li>Bachelor's Degree in Telecommunications and Information Engineering – JKUAT (2019–2024)</li>
+    <li>High School Certificate – St. Anthony’s Boys High School-Kitale (2015–2018)</li>
+  </ul>
+
+  <h3>Work Experience</h3>
+  <ul>
+    <li><strong>Aga Khan University Hospital – Nairobi (Mar 2025 – Present)</strong>
+      <ul>
+        <li>Configured Avaya IP phones, trunk routing, static routes and CLI via Avaya Site Manager</li>
+        <li>Worked with SIP lines and VoIP systems</li>
+        <li>Installed and configured Juniper Switches, Fortinet Firewalls</li>
+        <li>Network downtime troubleshooting, gained insight into MPLS tech</li>
+      </ul>
+    </li>
+    <li><strong>Swift Technologies Ltd (Jan–Apr 2023 & Jan–Apr 2024)</strong>
+      <ul>
+        <li>Installed switches, routers, APs, and CCTV systems</li>
+        <li>Handled IP addressing, fiber splicing, CAT5/6 crimping</li>
+        <li>Performed firmware updates and created field reports</li>
+      </ul>
+    </li>
+    <li><strong>Kenya Animal Genetic Resources Centre (Jan–Apr 2022)</strong>
+      <ul>
+        <li>Resolved user support issues (hardware/software)</li>
+        <li>Maintained LAN/Wi-Fi, network devices, and server setups</li>
+        <li>Handled inventory and IT asset documentation</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>Certifications</h3>
+  <ul>
+    <li>Introduction to Cybersecurity – Cisco (Completed)</li>
+    <li>Networking Basics – Cisco (Completed)</li>
+    <li>Network Addressing & Troubleshooting – Cisco (Completed)</li>
+    <li>Networking Devices & Initial Config – Cisco (Ongoing)</li>
+    <li>Cloud & Network Security – CyberShujaa (Ongoing)</li>
+    <li>AI Skilling Program – JKUAT/Microsoft (Ongoing)</li>
+  </ul>
+
+  <h3>Skills</h3>
+  <ul>
+    <li>Network Design, Switch/Router Configuration, VLANs, IP Routing</li>
+    <li>Fiber Optics, Cabling, CCTV Setup</li>
+    <li>Avaya IP Telephony, Fortinet, Juniper, MPLS, VoIP, SIP</li>
+    <li>IT Support, Technical Documentation, Problem-Solving</li>
+  </ul>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>1. Enterprise Network Design – Cisco Packet Tracer</h3>
+    <p>Designed and simulated a complete network for a multi-department office using VLANs, inter-VLAN routing, DHCP, NAT, and internet connectivity.</p>
+  </div>
+
+  <div class="project">
+    <h3>2. Raspberry Pi CCTV Surveillance</h3>
+    <p>Deployed a motion-sensitive surveillance system using Raspberry Pi, USB camera, and backup automation. Enabled remote access via SSH and web interface.</p>
+  </div>
+
+  <div class="project">
+    <h3>3. Professional Portfolio Website (This Site)</h3>
+    <p>Developed a fully functional HTML/CSS portfolio to showcase projects, lab work, and academic/professional details for use in job/internship applications.</p>
+  </div>
+</section>
+
+<!-- Lab Challenges Section -->
+<section id="labs" class="section">
+  <h2>Lab Challenges</h2>
+
+  <div class="lab">
+    <h3>1. Network Traffic Analysis – HTB Academy</h3>
+    <p><strong>Problem:</strong> Detect attacker traffic using packet capture tools.</p>
+    <p><strong>Approach:</strong> Used tcpdump and Wireshark filters to identify suspicious HTTP, DNS, and TLS packets.</p>
+    <p><strong>Tools:</strong> tcpdump, Wireshark</p>
+    <img src="images/traffic-analysis.png" width="500">
+    <p><strong>Lessons:</strong> Understood passive recon and packet-level inspection.</p>
+  </div>
+
+  <div class="lab">
+    <h3>2. DNS Resolver Setup – Linux Lab</h3>
+    <p><strong>Problem:</strong> Build and test a local name resolution system using BIND9.</p>
+    <p><strong>Approach:</strong> Created DNS zone files and configured a caching/forwarding DNS server.</p>
+    <p><strong>Tools:</strong> Linux terminal, bind9, dig</p>
+    <img src="images/dns-lab.png" width="500">
+    <p><strong>Lessons:</strong> Gained deeper insight into DNS operations and how servers manage queries.</p>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <ul style="list-style: none; padding: 0;">
+    <li><strong>Email:</strong> <a href="mailto:collinskamau002@gmail.com">collinskamau002@gmail.com</a></li>
+    <li><strong>Phone:</strong> +254 728 422 734</li>
+    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/collins-kamau-kamanda-bb2514203" target="_blank">linkedin.com/in/collins-kamau-kamanda-bb2514203</a></li>
+    <li><strong>GitHub:</strong> <a href="https://github.com/collinskamau" target="_blank">github.com/collinskamau</a></li>
+  </ul>
+</section>
+
+<!-- JavaScript for Section Toggling -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll("nav a");
+    const sections = document.querySelectorAll(".section");
+
+    function showSection(id) {
+      sections.forEach(section => {
+        section.style.display = (section.id === id) ? "block" : "none";
+      });
+    }
+
+    links.forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href").substring(1);
+        showSection(targetId);
+      });
+    });
+
+    showSection("home");
+  });
+</script>
+
+</body>
+</html>
